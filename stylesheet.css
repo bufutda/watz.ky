@@ -1,0 +1,59 @@
+.fwrap {
+    /*perspective: 1000px;*/
+    font-family: consolas;
+    float: left;
+}
+.fwrap:hover .flip, .fwrap.hover .flip {
+    transform: rotateY(180deg);
+}
+.fwrap, .front, .back {
+    width: 10vw;
+    height: 10vw;
+}
+.flip {
+    transition: 1.5s;
+    transform-style: preserve-3d;
+    position: relative;
+}
+.front, .back {
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.front {
+    z-index: 2;
+    transform: rotateY(0deg);
+    background: black;
+    color: white;
+}
+.back {
+    transform: rotateY(180deg);
+    background: #2c2c2c;
+    color: #c0c0c0;
+}
+site {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+#siteWrapper {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    background: black;
+}
+#siteWrapper:after {
+    padding-top: 60%;
+    display: block;
+    content: '';
+}
+#innerSiteWrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
