@@ -1,4 +1,9 @@
 #Javascript
 .eslintrc.json
 
+#Libs
 resources/lib
+
+#System
+.DS_Store
+*.xcf
