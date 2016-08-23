@@ -138,3 +138,49 @@ bbsite {
     left: 50%;
     transform: translateX(-50%);
 }
+.section {
+    width: 100%;
+}
+#footer.section {
+    font-family: "Gurajada", "Consolas", monospace, serif;
+    font-size: 20px;
+    text-align: center;
+    background: #1a1a1a;
+    color: #bfbfbf;
+    border-top: 3px solid #bfbfbf;
+    min-width: 389px;
+}
+a.betterlink {
+    text-decoration: none;
+    color: #bfbfbf;
+}
+a.betterlink:hover {
+    color: #d2d0d0;
+}
+.media-footer {
+    height: 32px;
+    background-image: url("/media.png");
+    display:inline-block;
+    transition: 1s;
+}
+.media-footer:hover {
+    filter: sepia(100%);
+}
+#media-footer-atom {
+    background-position: -158px -64px;
+    width: 35px;
+}
+#media-footer-digitalocean {
+    background-position: -193px -64px;
+    width: 58px;
+}
+#media-footer-git {
+    background-position: 0 -96px;
+    width: 33px;
+}
+.footer-raise {
+    display: inline-block;
+    transform: translateY(-20%);
+    padding-right: 10px;
+    padding-left: 20px;
+}
