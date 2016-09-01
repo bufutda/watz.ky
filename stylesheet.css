@@ -184,3 +184,28 @@ a.betterlink:hover {
     padding-right: 10px;
     padding-left: 20px;
 }
+.section-component {
+    display: block;
+    font-family: Arial;
+}
+.section-header {
+    color: #f0f0f0;
+    font-size: 27px;
+    letter-spacing: 4px;
+    padding: 40px 0 10px 55px;
+    transition: 1.5s;
+}
+.section-body {
+    color: #bfbfbf;
+    padding: 0 20px 40px 20px;
+}
+#about:hover .section-header {
+    color: #f3c9fe;
+    letter-spacing: 20px;
+}
+.separate {
+    border: none;
+    height: 6px;
+    background: #bfbfbf;
+    width: 80%;
+}

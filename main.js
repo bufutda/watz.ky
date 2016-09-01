@@ -92,14 +92,31 @@
     }
     window.addEventListener("resize", resizeListener);
     resizeListener();
+
+    var blinkState = true;
+    setInterval(function () {
+        var blinks = document.getElementsByClassName("cursor");
+        for (var i = 0; i < blinks.length; i++) {
+            blinks[i].style.visibility = blinkState ? "visible" : "hidden";
+        }
+        blinkState = !blinkState;
+    }, 1000);
 })();
 
 /**
  * Scroll the document to the div#about
+ * @param {integer} iteration - Internal recursive parameter for keeping track of how many calls have been made
  * @returns {undefined}
  */
-function scrollToResume () {
+function scrollToResume (iteration) {
     "use strict";
+    if (typeof iteration === "undefined") {
+        iteration = 0;
+    }
+    if (iteration > 25) {
+        console.warn("Scroll taking too long - aborting");
+        return;
+    }
     var elem = document.getElementsByTagName("bbsite")[0];
     var pos = document.getElementById("about").offsetTop;
     var y = elem.scrollTop;
@@ -109,5 +126,5 @@ function scrollToResume () {
         return;
     }
     elem.scrollTop = y;
-    setTimeout(scrollToResume, 40);
+    setTimeout(scrollToResume, 40, ++iteration);
 }
