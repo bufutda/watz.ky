@@ -1,0 +1,6 @@
+#nameImg {
+    width: 335px;
+}
+.section:hover .section-header {
+    letter-spacing: 10px;
+}

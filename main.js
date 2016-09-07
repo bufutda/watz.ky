@@ -1,5 +1,9 @@
 (function () {
     "use strict";
+    window.g = {
+        mobile: false,
+        mobileCSSLoaded: false
+    };
     /**
      * Fisher-Yates Shuffle. Code adapted from https://bost.ocks.org/mike/shuffle
      * @param {Array} array - the array to in-place shuffle
@@ -88,6 +92,31 @@
             document.getElementById("outerTileWrapper").style.width = (Math.ceil(window.innerWidth / 100) * 100) + "px";
         } else {
             document.getElementById("outerTileWrapper").style.width = (Math.ceil(window.innerHeight / 60) * 100) + "px";
+        }
+        if (window.innerWidth < 713 && !window.g.mobile) {
+            window.g.mobile = true;
+            if (!window.g.mobileCSSLoaded) {
+                var css = document.createElement("link");
+                css.setAttribute("rel", "stylesheet");
+                css.setAttribute("type", "text/css");
+                css.setAttribute("href", "/mobile.css");
+                css.setAttribute("title", "mobile");
+                document.getElementsByTagName("head")[0].appendChild(css);
+                window.g.mobileCSSLoaded = true;
+            } else {
+                for (var i = 0; i < document.styleSheets.length; i++) {
+                    if (document.styleSheets[i].title === "mobile") {
+                        document.styleSheets[i].disabled = false;
+                    }
+                }
+            }
+        } else if (window.innerWidth >= 713 && window.g.mobile) {
+            window.g.mobile = false;
+            for (var i = 0; i < document.styleSheets.length; i++) {
+                if (document.styleSheets[i].title === "mobile") {
+                    document.styleSheets[i].disabled = true;
+                }
+            }
         }
     }
     window.addEventListener("resize", resizeListener);

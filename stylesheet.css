@@ -127,16 +127,26 @@ bbsite {
     background-position: -192px 0;
 }
 #mediaWrapper {
-    height: 64px;
     min-width: 348px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#resumeWrapper {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 235px;
 }
 #resumeButton {
     width: 158px;
     height: 32px;
     background-position: 0 -64px;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
+}
+#resumePDF {
+    width: 32px;
+    height: 32px;
+    background-position: -33px -96px;
 }
 .section {
     width: 100%;
@@ -199,7 +209,7 @@ a.betterlink:hover {
     color: #bfbfbf;
     padding: 0 20px 40px 20px;
 }
-#about:hover .section-header {
+.section:hover .section-header {
     color: #f3c9fe;
     letter-spacing: 20px;
 }
@@ -208,4 +218,7 @@ a.betterlink:hover {
     height: 6px;
     background: #bfbfbf;
     width: 80%;
+}
+#nameImg {
+    padding-left: 6px;
 }
