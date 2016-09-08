@@ -264,7 +264,8 @@ a.betterlink:hover {
 }
 .ed-part,
 .ex-part,
-.v-part {
+.v-part,
+.p-part {
     border: 2px solid #bcbcbc;
     border-radius: 23px;
     display: inline-block;
@@ -275,29 +276,34 @@ a.betterlink:hover {
 }
 .ed-part:hover,
 .v-part:hover,
-.ex-part:hover {
+.ex-part:hover,
+.p-part:hover {
     background: #4b4949;
 }
 .ed-part div,
 .v-part div,
-.ex-part div {
+.ex-part div,
+.p-part div {
     padding: 4px 20px;
 }
 .ed-part-name,
 .v-part-name,
+.p-part-name,
 .ex-part-name {
     color: #dadada;
     font-size: 23px;
 }
 .ed-part-date,
-.v-partp-date
+.v-part-date,
+.p-part-date,
 .ex-part-date {
     margin-top: 10px;
     font-style: italic;
     color: #9a9898;
 }
 .ed-part-school,
-.v-part-role
+.v-part-role,
+.p-part-desc,
 .ex-part-role {
     margin-bottom: 10px;
     color: #9a9898;
@@ -305,6 +311,7 @@ a.betterlink:hover {
 #education:hover .ed-part,
 #experience:hover .ex-part,
 #volunteer:hover .v-part,
+#projects:hover .p-part,
 #skillset:hover .s-part-title-border {
     border-color: #f3c9fe;
 }
@@ -312,20 +319,24 @@ a.betterlink:hover {
     color: #f3c9fe;
 }
 .v-part-name,
+.p-part-name,
 .ex-part-name {
     margin-top: 10px;
 }
 .v-part-date,
+.p-part-date,
 .ex-part-date {
     margin-top: 0;
 }
 .v-part-role,
+.p-part-desc,
 .ex-part-role {
     margin-top: 10px;
     margin-bottom: 0;
     font-size: 19px;
 }
 .v-part-role i,
+.p-part-desc i,
 .ex-part-role i {
     font-size: 15px;
 }
