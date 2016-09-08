@@ -20,3 +20,18 @@
 .section-body {
     padding-left: 20px;
 }
+.s-part-title {
+    display: none;
+}
+.s-part-title-col {
+    width: 0;
+}
+.s-tbl {
+    margin-right: 0;
+}
+.s-part-alt-title {
+    display: block;
+}
+.s-part-title-border {
+    display: none;
+}
