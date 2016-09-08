@@ -35,3 +35,6 @@
 .s-part-title-border {
     display: none;
 }
+#about .section-body {
+    margin-right: 0;
+}

@@ -310,6 +310,9 @@ a.betterlink:hover {
 #skillset:hover .s-part-title-border {
     border-color: #f3c9fe;
 }
+#about:hover strong {
+    color: #f3c9fe;
+}
 .ex-part-name {
     margin-top: 10px;
 }
@@ -472,4 +475,12 @@ a.betterlink:hover {
 }
 #skillset .section-body {
     padding-left: 50px;
+}
+#about strong {
+    color: #dadada;
+    transition: 1s;
+}
+#about .section-body {
+    font-size: 23px;
+    margin-right: 120px;
 }
