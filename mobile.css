@@ -2,7 +2,7 @@
     width: 335px;
 }
 .section:hover .section-header {
-    letter-spacing: 10px;
+    /*letter-spacing: 10px;*/
 }
 .c-tbl {
     display: table;

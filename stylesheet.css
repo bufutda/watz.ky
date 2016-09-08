@@ -162,6 +162,9 @@ bbsite {
     color: #bfbfbf;
     border-top: 3px solid #bfbfbf;
 }
+a {
+    text-decoration: none;
+}
 a.betterlink {
     text-decoration: none;
     color: #bfbfbf;
@@ -189,23 +192,38 @@ a.betterlink:hover {
 }
 .section-component {
     display: block;
-    font-family: Arial;
+    font-family: "Oxygen", sans-serif;
 }
 .section-header {
     color: #f0f0f0;
     font-size: 27px;
-    letter-spacing: 4px;
-    padding: 40px 0 10px 55px;
+    letter-spacing: 6px;
+    padding: 40px 3px 10px 55px;
     -webkit-transition: 1.5s;
-    transition: 1.5s;
+            transition: 1.5s;
+    display: inline-block;
+    position: relative;
 }
 .section-body {
     color: #bfbfbf;
     padding: 0 20px 40px 200px;
 }
+.section-header:after {
+    content: '';
+    display: block;
+    margin: auto;
+    height: 4px;
+    width: 0px;
+    background: transparent;
+    -webkit-transition: width 1s ease, background-color 1s ease;
+    transition: width 1s ease, background-color 1s ease;
+}
+.section:hover .section-header:after {
+    width: 100%;
+    background: #f3c9fe;
+}
 .section:hover .section-header {
     color: #f3c9fe;
-    letter-spacing: 20px;
 }
 .separate {
     border: none;
@@ -215,6 +233,7 @@ a.betterlink:hover {
 }
 #nameImg {
     padding-left: 6px;
+    width: 712px;
 }
 .c-tbl-data {
     -webkit-transition: 1s;
