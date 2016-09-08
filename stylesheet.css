@@ -110,9 +110,10 @@ bbsite {
     cursor: pointer;
     pointer-events: visible;
     transition: 1s;
+    filter: opacity(50%);
 }
 .media:hover {
-    filter: invert(100%);
+    filter: opacity(100%);
 }
 #media-git {
     background-position: 0 0;
@@ -146,7 +147,7 @@ bbsite {
 #resumePDF {
     width: 32px;
     height: 32px;
-    background-position: -33px -96px;
+    background-position: -225px -96px;
 }
 .section {
     width: 100%;
@@ -158,7 +159,6 @@ bbsite {
     background: #1a1a1a;
     color: #bfbfbf;
     border-top: 3px solid #bfbfbf;
-    min-width: 389px;
 }
 a.betterlink {
     text-decoration: none;
@@ -237,6 +237,10 @@ a.betterlink:hover {
 .c-tbl td {
     padding: 5px 10px 5px 10px;
 }
+.c-tbl a {
+    text-decoration: none;
+    color: #bcbcbc !important;
+}
 .c-tbl-img {
     width: 32px;
     height: 32px;
@@ -270,5 +274,11 @@ a.betterlink:hover {
     height: 160px;
 }
 #contactWrapper {
-    min-width: 470px;
+    min-width: 500px;
+}
+#contactInfo {
+    min-width: 130px;
+}
+.footer-part {
+    display: inline-block;
 }
