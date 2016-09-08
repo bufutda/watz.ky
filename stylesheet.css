@@ -207,7 +207,7 @@ a.betterlink:hover {
 }
 .section-body {
     color: #bfbfbf;
-    padding: 0 20px 40px 20px;
+    padding: 0 20px 40px 300px;
 }
 .section:hover .section-header {
     color: #f3c9fe;
@@ -281,4 +281,31 @@ a.betterlink:hover {
 }
 .footer-part {
     display: inline-block;
+}
+.ed-part {
+    border: 2px solid #bcbcbc;
+    border-radius: 23px;
+    display: inline-block;
+    width: 85%;
+    transition: 1s;
+    margin: 10px 0 10px 17px;
+}
+.ed-part:hover {
+    background: #4b4949;
+}
+.ed-part div {
+    padding: 4px 20px;
+}
+.ed-part-name {
+    color: #dadada;
+    font-size: 23px;
+}
+.ed-part-date {
+    margin-top: 10px;
+    font-style: italic;
+    color: #9a9898;
+}
+.ed-part-school {
+    margin-bottom: 10px;
+    color: #9a9898;
 }
