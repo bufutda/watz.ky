@@ -4,3 +4,13 @@
 .section:hover .section-header {
     letter-spacing: 10px;
 }
+.c-tbl {
+    display: table;
+    margin: initial;
+}
+#contact div.section-body {
+    height: 300px;
+}
+#contactWrapper {
+    min-width: initial;
+}

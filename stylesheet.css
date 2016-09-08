@@ -222,3 +222,53 @@ a.betterlink:hover {
 #nameImg {
     padding-left: 6px;
 }
+.c-tbl-data {
+    transition: 1s;
+}
+.c-tbl tr:hover div {
+    filter: sepia(100%);
+    cursor: pointer;
+}
+.c-tbl {
+    display: inline-table;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+.c-tbl td {
+    padding: 5px 10px 5px 10px;
+}
+.c-tbl-img {
+    width: 32px;
+    height: 32px;
+    background-image: url("/media.png");
+    transition: 1s;
+}
+#c-phone {
+    background-position: -193px -96px;
+}
+#c-email {
+    background-position: -161px -96px;
+}
+#c-linkedin {
+    background-position: -129px -96px;
+}
+#c-twitter {
+    background-position: -97px -96px;
+}
+#c-github {
+    background-position: -65px -96px;
+}
+#c-resume {
+    background-position: -33px -96px;
+}
+.centerX {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#contact div.section-body {
+    height: 160px;
+}
+#contactWrapper {
+    min-width: 470px;
+}
