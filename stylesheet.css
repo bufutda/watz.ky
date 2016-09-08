@@ -263,7 +263,8 @@ a.betterlink:hover {
     display: inline-block;
 }
 .ed-part,
-.ex-part {
+.ex-part,
+.v-part {
     border: 2px solid #bcbcbc;
     border-radius: 23px;
     display: inline-block;
@@ -273,48 +274,58 @@ a.betterlink:hover {
     margin: 10px 0 10px 17px;
 }
 .ed-part:hover,
+.v-part:hover,
 .ex-part:hover {
     background: #4b4949;
 }
 .ed-part div,
+.v-part div,
 .ex-part div {
     padding: 4px 20px;
 }
 .ed-part-name,
+.v-part-name,
 .ex-part-name {
     color: #dadada;
     font-size: 23px;
 }
 .ed-part-date,
+.v-partp-date
 .ex-part-date {
     margin-top: 10px;
     font-style: italic;
     color: #9a9898;
 }
 .ed-part-school,
+.v-part-role
 .ex-part-role {
     margin-bottom: 10px;
     color: #9a9898;
 }
 #education:hover .ed-part,
 #experience:hover .ex-part,
+#volunteer:hover .v-part,
 #skillset:hover .s-part-title-border {
     border-color: #f3c9fe;
 }
 #about:hover strong {
     color: #f3c9fe;
 }
+.v-part-name,
 .ex-part-name {
     margin-top: 10px;
 }
+.v-part-date,
 .ex-part-date {
     margin-top: 0;
 }
+.v-part-role,
 .ex-part-role {
     margin-top: 10px;
     margin-bottom: 0;
     font-size: 19px;
 }
+.v-part-role i,
 .ex-part-role i {
     font-size: 15px;
 }
