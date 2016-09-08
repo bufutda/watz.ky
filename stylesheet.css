@@ -3,40 +3,54 @@ body {
     overflow: hidden;
 }
 .fwrap {
-    perspective: 1000px;
+    -webkit-perspective: 1000px;
+            perspective: 1000px;
     font-family: consolas;
     float: left;
     width: 10%;
     height: 16.66666666666666%;
 }
 .flatten {
-    perspective: none;
+    -webkit-perspective: none;
+            perspective: none;
 }
 .fwrap.hovera .flip {
-    transform-origin: right center;
-    transform: translateX(-100%) rotateY(-180deg);
+    -webkit-transform-origin: right center;
+            transform-origin: right center;
+    -webkit-transform: translateX(-100%) rotateY(-180deg);
+            transform: translateX(-100%) rotateY(-180deg);
 }
 .fwrap.hoverb .flip {
-    transform-origin: left center;
-    transform: translateX(100%) rotateY(180deg);
+    -webkit-transform-origin: left center;
+            transform-origin: left center;
+    -webkit-transform: translateX(100%) rotateY(180deg);
+            transform: translateX(100%) rotateY(180deg);
 }
 .fwrap.hoverc .flip {
-    transform-origin: right center;
-    transform: translateX(-100%) rotateY(180deg);
+    -webkit-transform-origin: right center;
+            transform-origin: right center;
+    -webkit-transform: translateX(-100%) rotateY(180deg);
+            transform: translateX(-100%) rotateY(180deg);
 }
 .fwrap.hoverd .flip {
-    transform-origin: left center;
-    transform: translateX(100%) rotateY(-180deg);
+    -webkit-transform-origin: left center;
+            transform-origin: left center;
+    -webkit-transform: translateX(100%) rotateY(-180deg);
+            transform: translateX(100%) rotateY(-180deg);
 }
 .flip {
+    -webkit-transition: 1s;
     transition: 1s;
-    transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
     position: relative;
     width: 100%;
     height: 100%;
 }
-.front, .back {
-    backface-visibility: hidden;
+.front,
+.back {
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
     position: absolute;
     top: 0;
     left: 0;
@@ -45,13 +59,15 @@ body {
 }
 .front {
     z-index: 2;
-    transform: rotateY(0deg);
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
     background: blue;
     background-size: cover;
     background-repeat: no-repeat;
 }
 .back {
-    transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
     background: white;
     background-repeat: no-repeat;
     background-size: cover;
@@ -63,6 +79,7 @@ bbsite {
     left: 0;
     right: 0;
     overflow-x: hidden;
+    -webkit-transition: 1s;
     transition: 1s;
     background: #2c2c2c;
 }
@@ -71,6 +88,7 @@ bbsite {
     width: 100%;
     height: 100%;
     overflow: hidden;
+    min-height: 600px;
 }
 #tileWrapper {
     position: relative;
@@ -95,7 +113,8 @@ bbsite {
 #name {
     pointer-events: none;
     position: absolute;
-    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
     top: 50%;
     left: 50%;
     z-index: 2;
@@ -109,45 +128,28 @@ bbsite {
     margin: 0 10px 0 10px;
     cursor: pointer;
     pointer-events: visible;
+    -webkit-transition: 1s;
     transition: 1s;
-    filter: opacity(50%);
+    -webkit-filter: opacity(50%);
+            filter: opacity(50%);
 }
 .media:hover {
-    filter: opacity(100%);
-}
-#media-git {
-    background-position: 0 0;
-}
-#media-twitter {
-    background-position: -64px 0;
-}
-#media-linkedin {
-    background-position: -128px 0;
-}
-#media-mail {
-    background-position: -192px 0;
+    -webkit-filter: opacity(100%);
+            filter: opacity(100%);
 }
 #mediaWrapper {
     min-width: 348px;
     position: absolute;
     left: 50%;
-    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
 }
 #resumeWrapper {
     position: absolute;
     left: 50%;
-    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
     width: 235px;
-}
-#resumeButton {
-    width: 158px;
-    height: 32px;
-    background-position: 0 -64px;
-}
-#resumePDF {
-    width: 32px;
-    height: 32px;
-    background-position: -225px -96px;
 }
 .section {
     width: 100%;
@@ -171,22 +173,17 @@ a.betterlink:hover {
     height: 32px;
     background-image: url("/media.png");
     display:inline-block;
+    -webkit-transition: 1s;
     transition: 1s;
 }
 .media-footer:hover {
-    filter: sepia(100%);
-}
-#media-footer-digitalocean {
-    background-position: -193px -64px;
-    width: 58px;
-}
-#media-footer-git {
-    background-position: 0 -96px;
-    width: 33px;
+    -webkit-filter: sepia(100%);
+            filter: sepia(100%);
 }
 .footer-raise {
     display: inline-block;
-    transform: translateY(-20%);
+    -webkit-transform: translateY(-20%);
+            transform: translateY(-20%);
     padding-right: 10px;
     padding-left: 20px;
 }
@@ -199,6 +196,7 @@ a.betterlink:hover {
     font-size: 27px;
     letter-spacing: 4px;
     padding: 40px 0 10px 55px;
+    -webkit-transition: 1.5s;
     transition: 1.5s;
 }
 .section-body {
@@ -219,10 +217,12 @@ a.betterlink:hover {
     padding-left: 6px;
 }
 .c-tbl-data {
+    -webkit-transition: 1s;
     transition: 1s;
 }
 .c-tbl tr:hover div {
-    filter: sepia(100%);
+    -webkit-filter: sepia(100%);
+            filter: sepia(100%);
     cursor: pointer;
 }
 .c-tbl {
@@ -241,30 +241,14 @@ a.betterlink:hover {
     width: 32px;
     height: 32px;
     background-image: url("/media.png");
+    -webkit-transition: 1s;
     transition: 1s;
-}
-#c-phone {
-    background-position: -193px -96px;
-}
-#c-email {
-    background-position: -161px -96px;
-}
-#c-linkedin {
-    background-position: -129px -96px;
-}
-#c-twitter {
-    background-position: -97px -96px;
-}
-#c-github {
-    background-position: -65px -96px;
-}
-#c-resume {
-    background-position: -33px -96px;
 }
 .centerX {
     position: absolute;
     left: 50%;
-    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
 }
 #contact div.section-body {
     height: 160px;
@@ -278,30 +262,37 @@ a.betterlink:hover {
 .footer-part {
     display: inline-block;
 }
-.ed-part, .ex-part {
+.ed-part,
+.ex-part {
     border: 2px solid #bcbcbc;
     border-radius: 23px;
     display: inline-block;
     width: 85%;
+    -webkit-transition: 1s;
     transition: 1s;
     margin: 10px 0 10px 17px;
 }
-.ed-part:hover, .ex-part:hover {
+.ed-part:hover,
+.ex-part:hover {
     background: #4b4949;
 }
-.ed-part div, .ex-part div {
+.ed-part div,
+.ex-part div {
     padding: 4px 20px;
 }
-.ed-part-name, .ex-part-name {
+.ed-part-name,
+.ex-part-name {
     color: #dadada;
     font-size: 23px;
 }
-.ed-part-date, .ex-part-date {
+.ed-part-date,
+.ex-part-date {
     margin-top: 10px;
     font-style: italic;
     color: #9a9898;
 }
-.ed-part-school, .ex-part-role {
+.ed-part-school,
+.ex-part-role {
     margin-bottom: 10px;
     color: #9a9898;
 }
@@ -332,90 +323,8 @@ a.betterlink:hover {
     height: 32px;
     width: 32px;
     left: -50%;
-    transform: translateX(-50%);
-}
-#icon-javascript {
-    background-position: 0 -128px;
-}
-#icon-jquery {
-    background-position: -32px -128px;
-}
-#icon-nodejs {
-    background-position: -64px -128px;
-    width: 28px;
-}
-#icon-php {
-    background-position: -92px -128px;
-    width: 63px;
-}
-#icon-html {
-    background-position: -155px -128px;
-    width: 28px;
-}
-#icon-css {
-    background-position: -183px -128px;
-    width: 28px;
-}
-#icon-md {
-    background-position: 0 -160px;
-    width: 51px;
-}
-#icon-bash {
-    background-position: -51px -160px;
-}
-#icon-python {
-    background-position: -83px -160px;
-}
-#icon-c {
-    background-position: -115px -160px;
-}
-#icon-cpp {
-    background-position: -147px -160px;
-    width: 29px;
-}
-#icon-java {
-    background-position: -176px -160px;
-    width: 24px;
-}
-#icon-sqlite {
-    background-position: -199px -160px;
-    width: 26px;
-    margin-right: 37px;
-}
-#icon-redis {
-    background-position: -211px -128px;
-    width: 37px;
-}
-#icon-ubuntu {
-    background-position: -225px -160px;
-    margin-right: 31px;
-}
-#icon-osx {
-    background-position: -32px -192px;
-}
-#icon-centos {
-    background-position: 0 -192px;
-}
-#icon-windows {
-    background-position: -64px -192px;
-}
-#icon-gimp,
-#media-footer-gimp {
-    background-position: -96px -192px;
-    width: 51px;
-    margin-right: 12px;
-}
-#icon-git {
-    background-position: -147px -192px;
-}
-#icon-atom,
-#media-footer-atom {
-    background-position: -158px -64px;
-    width: 35px;
-}
-#icon-vim {
-    background-position: -179px -192px;
-    margin-right: 31px;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
 }
 .right {
     text-align: right;
@@ -434,12 +343,14 @@ a.betterlink:hover {
     margin-right: 10%;
 }
 .s-tbl tr {
+    -webkit-transition: 1s;
     transition: 1s;
 }
 .s-part {
     width: 100%;
 }
-.s-part-title, .s-part-alt-title {
+.s-part-title,
+.s-part-alt-title {
     font-variant: small-caps;
     font-size: 27px;
     letter-spacing: 2px;
@@ -468,16 +379,19 @@ a.betterlink:hover {
     bottom: 0;
     border: 2px solid #bcbcbc;
     border-right: none;
+    -webkit-transition: 1s;
     transition: 1s;
 }
 .s-tbl tr:hover {
-    filter: sepia(100%);
+    -webkit-filter: sepia(100%);
+            filter: sepia(100%);
 }
 #skillset .section-body {
     padding-left: 50px;
 }
 #about strong {
     color: #dadada;
+    -webkit-transition: 1s;
     transition: 1s;
 }
 #about .section-body {

@@ -38,3 +38,9 @@
 #about .section-body {
     margin-right: 0;
 }
+#skillset .section-body {
+    padding-left: 0;
+}
+#outerTileWrapper {
+    min-height: 400px;
+}

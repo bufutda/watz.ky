@@ -10,11 +10,11 @@
      * @returns {Array} - the shuffled array
      */
     function shuffle (array) {
-        let counter = array.length;
+        var counter = array.length;
         while (counter > 0) {
-            let index = Math.floor(Math.random() * counter);
+            var index = Math.floor(Math.random() * counter);
             counter--;
-            let temp = array[counter];
+            var temp = array[counter];
             array[counter] = array[index];
             array[index] = temp;
         }
