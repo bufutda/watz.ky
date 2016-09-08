@@ -282,7 +282,7 @@ a.betterlink:hover {
 .footer-part {
     display: inline-block;
 }
-.ed-part {
+.ed-part, .ex-part {
     border: 2px solid #bcbcbc;
     border-radius: 23px;
     display: inline-block;
@@ -290,22 +290,39 @@ a.betterlink:hover {
     transition: 1s;
     margin: 10px 0 10px 17px;
 }
-.ed-part:hover {
+.ed-part:hover, .ex-part:hover {
     background: #4b4949;
 }
-.ed-part div {
+.ed-part div, .ex-part div {
     padding: 4px 20px;
 }
-.ed-part-name {
+.ed-part-name, .ex-part-name {
     color: #dadada;
     font-size: 23px;
 }
-.ed-part-date {
+.ed-part-date, .ex-part-date {
     margin-top: 10px;
     font-style: italic;
     color: #9a9898;
 }
-.ed-part-school {
+.ed-part-school, .ex-part-role {
     margin-bottom: 10px;
     color: #9a9898;
+}
+#education:hover .ed-part, #experience:hover .ex-part {
+    border-color: #f3c9fe;
+}
+.ex-part-name {
+    margin-top: 10px;
+}
+.ex-part-date {
+    margin-top: 0;
+}
+.ex-part-role {
+    margin-top: 10px;
+    margin-bottom: 0;
+    font-size: 19px;
+}
+.ex-part-role i {
+    font-size: 15px;
 }
