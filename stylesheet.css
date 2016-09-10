@@ -149,7 +149,7 @@ bbsite {
     left: 50%;
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
-    width: 235px;
+    width: 236px;
 }
 .section {
     width: 100%;
@@ -198,11 +198,14 @@ a.betterlink:hover {
     color: #f0f0f0;
     font-size: 27px;
     letter-spacing: 6px;
-    padding: 40px 3px 10px 55px;
+    padding: 40px 0 10px 55px;
     -webkit-transition: 1.5s;
             transition: 1.5s;
     display: inline-block;
     position: relative;
+}
+.section-header span {
+    letter-spacing: 0;
 }
 .section-body {
     color: #bfbfbf;
