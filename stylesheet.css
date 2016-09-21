@@ -209,7 +209,7 @@ a.betterlink:hover {
 }
 .section-body {
     color: #bfbfbf;
-    padding: 0 20px 40px 200px;
+    padding: 0 20px 10px 200px;
 }
 .section-header:after {
     content: '';
@@ -274,6 +274,7 @@ a.betterlink:hover {
 }
 #contact div.section-body {
     height: 160px;
+    padding-bottom: 54px;
 }
 #contactWrapper {
     min-width: 500px;
@@ -294,7 +295,7 @@ a.betterlink:hover {
     width: 85%;
     -webkit-transition: 1s;
     transition: 1s;
-    margin: 10px 0 10px 17px;
+    margin: 10px 0 35px 17px;
 }
 .ed-part:hover,
 .v-part:hover,
@@ -392,6 +393,7 @@ a.betterlink:hover {
 }
 .s-part {
     width: 100%;
+    padding-bottom: 32px;
 }
 .s-part-title,
 .s-part-alt-title {
