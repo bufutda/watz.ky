@@ -514,3 +514,24 @@
     background-position: -27px -224px;
     margin-right: 37px;
 }
+#icon-arch {
+    background-position: -60px -224px;
+    margin-right: 31px;
+}
+#icon-jira {
+    background-position: -92px -224px;
+    margin-right: 31px;
+    width: 24px;
+}
+#icon-confluence {
+    background-position: -116px -224px;
+    width: 36px;
+}
+#icon-bitbucket {
+    background-position: -152px -224px;
+    width: 28px;
+}
+#icon-crucible {
+    background-position: -180px -224px;
+    width: 30px;
+}
