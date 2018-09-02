@@ -72,7 +72,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
 }
-bbsite {
+main {
     position: absolute;
     top: 0;
     bottom: 0;
@@ -121,7 +121,7 @@ bbsite {
 }
 .media {
     background-repeat: no-repeat;
-    background-image: url("/media.png");
+    background-image: url("/media.webp");
     height: 64px;
     width: 64px;
     display: inline-block;
@@ -174,7 +174,7 @@ a.betterlink:hover {
 }
 .media-footer {
     height: 32px;
-    background-image: url("/media.png");
+    background-image: url("/media.webp");
     display:inline-block;
     -webkit-transition: 1s;
     transition: 1s;
@@ -262,7 +262,7 @@ a.betterlink:hover {
 .c-tbl-img {
     width: 32px;
     height: 32px;
-    background-image: url("/media.png");
+    background-image: url("/media.webp");
     -webkit-transition: 1s;
     transition: 1s;
 }
@@ -364,7 +364,7 @@ a.betterlink:hover {
     font-size: 15px;
 }
 .languageIcon {
-    background-image: url("/media.png");
+    background-image: url("/media.webp");
     height: 32px;
     width: 32px;
     left: -50%;

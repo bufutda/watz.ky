@@ -1,0 +1,21 @@
+#!/bin/bash
+
+DESTINATION="/srv/http/watz.ky-ssl"
+SOURCE="/home/sawatzky/dev/watz.ky"
+
+echo "Remove $DESTINATION"
+rm -r "$DESTINATION"
+
+echo "Create $DESTINATION"
+mkdir -p "$DESTINATION"
+
+git ls-files | grep '^[^\.]' | while read -r file; do
+    if [[ "$file" =~ .*\.(png|jpg|jpeg) ]]; then
+        filename="${file%.*}"
+        echo "$SOURCE/$file -> $DESTINATION/$filename.webp (convert)"
+        convert "$SOURCE/$file" "$DESTINATION/$filename.webp"
+    else
+        echo "$SOURCE/$file -> $DESTINATION/$file"
+        cp "$SOURCE/$file" "$DESTINATION/$file"
+    fi
+done

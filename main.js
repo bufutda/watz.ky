@@ -28,7 +28,7 @@
     }
     shuffle(tiles);
     setInterval(function () {
-        if (document.getElementsByTagName("bbsite")[0].scrollTop <= window.innerHeight) {
+        if (document.getElementsByTagName("main")[0].scrollTop <= window.innerHeight) {
             var aborted = false;
             do {
                 if (tileCounter < 60) {
@@ -146,7 +146,7 @@ function scrollToResume (iteration) {
         console.warn("Scroll taking too long - aborting");
         return;
     }
-    var elem = document.getElementsByTagName("bbsite")[0];
+    var elem = document.getElementsByTagName("main")[0];
     var pos = document.getElementById("about").offsetTop;
     var y = elem.scrollTop;
     y += Math.round((pos - y) * 0.3);
